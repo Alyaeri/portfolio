@@ -1,0 +1,38 @@
+<agm-map [latitude]="-27.467721" [longitude]="153.025407" [zoom]="13" [draggable]="false" [styles]="styles">
+  <agm-marker [iconUrl]="'images/contact/marker.png'" [latitude]="-27.467721" [longitude]="153.025407">
+  </agm-marker>
+</agm-map>
+
+<!-- GET IN TOUCH -->
+<div class="section-wrapper">
+  <div class="section-wrapper-inner-content">
+
+    <h1>Lets talk</h1>
+
+    <form name="contactform" method="post" action="send_form_email.php">
+      <div class="form-field-wrapper">
+        <input type="text" placeholder="Name" name="first_name" maxlength="50" size="30">
+      </div>
+
+      <div class="form-field-wrapper">
+        <input type="text" placeholder="Email" name="email" maxlength="80" size="30">
+      </div>
+
+      <div class="form-field-wrapper">
+        <input type="text" placeholder="Subject" name="telephone" maxlength="30" size="30">
+      </div>
+
+      <div class="form-field-wrapper">
+        <textarea name="comments" placeholder="Message" maxlength="1000" cols="25" rows="6"></textarea>
+      </div>
+
+      <button type="submit" value="Submit">
+        SUBMIT
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<sd-footer></sd-footer>
+

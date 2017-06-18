@@ -1,0 +1,16 @@
+<div class="nav-bar">
+  <div class="nav-inner">
+    <img class="logo-small" src="../images/shared/logo-icon.png"/>
+
+    <div class="nav-links">
+
+      <a [routerLinkActive]="['is-active']" [routerLink]="['']" [routerLinkActiveOptions]="{exact:true}">Home</a>
+      <a [routerLinkActive]="['is-active']" [routerLink]="['/about']" [routerLinkActiveOptions]="{exact:true}">About</a>
+      <a [routerLinkActive]="['is-active']" [routerLink]="['/portfolio']">Portfolio</a>
+      <!--<a [routerLinkActive]="['is-active']" [routerLink]="['/freebies']">Freebies</a>-->
+      <!--<a [routerLinkActive]="['is-active']" [routerLink]="['/contact']" [routerLinkActiveOptions]="{exact:true}">Contact</a>-->
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

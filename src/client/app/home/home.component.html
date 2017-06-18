@@ -1,0 +1,113 @@
+<!-- PARALLAX 1 -->
+<div class="hero home-page">
+    <span>
+      <h1>Rachelle Patman</h1>
+      <h3>User Interface + User Experience Designer</h3>
+    </span>
+  <img src="../../images/home/hero.png"/>
+  <div class="flex full-width" id="hero-arrow-wrap">
+    <i class="material-icons hero-arrow">chevron_right</i>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="section-wrapper light">
+  <div class="section-wrapper-inner-content translateX0"
+       [@viewportScrollAnimation]="scrollimateOptions.section1.currentState"
+       [scrollimate]="scrollimateOptions.section1">
+    <h1>Hi, I'm Rachelle</h1>
+    <p>A User Interface + User Experience Designer, with a passion for creating friendly and intuitive interfaces for
+      mobile + web.
+    </p>
+    <br>
+    <p>I work with my clients from Solution Definition through to the delivery and release of their product, nurturing
+      the idea to its full potential.
+      <br>
+      You can learn more about me, my design process + tools, and the services I offer <a
+        [routerLink]="['/about']">here</a></p>
+    <br>
+
+    <p>
+      Check out some of my recent work below, as well as my <a [routerLink]="['/portfolio']">portfolio</a>
+    </p>
+  </div>
+</div>
+
+<!-- LATEST WORK -->
+<div class="section-wrapper dark">
+  <div class="section-wrapper-inner-content">
+    <div class="latest-item-wrapper section-odd">
+      <img [@viewportScrollAnimation]="scrollimateOptions.section2.currentState"
+           [scrollimate]="scrollimateOptions.section2" src="../../images/home/device-2.png"/>
+      <div [@viewportScrollAnimation]="scrollimateOptions.section2.currentState"
+           [scrollimate]="scrollimateOptions.section2" class="details">
+        <h2>Enquire Management Portal</h2>
+        <p>Enquire is a revolutionary Grant Management system launching to global success, working in partnership with
+          governments all over the world to provide a reliable system for the distribution of government funds to
+          community improvement projects all over their country</p>
+        <button [routerLink]="['/portfolio/enquire-management-portal']" type="button">
+          Learn More
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="section-wrapper light">
+  <div class="section-wrapper-inner-content">
+    <div class="latest-item-wrapper section-even">
+      <div [@viewportScrollAnimation]="scrollimateOptions.section3.currentState"
+           [scrollimate]="scrollimateOptions.section3" class="details">
+        <h2>Personal Identity</h2>
+        <p>Following a major design and marketing rebrand of my personal design identity, this project aims to
+          demonstrate
+          the potential for branding and marketing items using this new identity. This kind of branding helps position a
+          company, or designer such as myself, and illustrates to potential clients the calibre of my work.</p>
+        <button [routerLink]="['/portfolio/personal-identity']" type="button">
+          Learn More
+        </button>
+      </div>
+      <img [@viewportScrollAnimation]="scrollimateOptions.section3.currentState"
+           [scrollimate]="scrollimateOptions.section3" src="../../images/home/device-3.png"/>
+    </div>
+  </div>
+</div>
+
+<div class="section-wrapper dark">
+  <div class="section-wrapper-inner-content">
+    <div class="latest-item-wrapper section-odd">
+      <img [@viewportScrollAnimation]="scrollimateOptions.section4.currentState"
+           [scrollimate]="scrollimateOptions.section4" src="../../images/home/device-1.png"/>
+      <div [@viewportScrollAnimation]="scrollimateOptions.section4.currentState"
+           [scrollimate]="scrollimateOptions.section4" class="details">
+        <h2>Android Reimagined</h2>
+        <p>The 'Android Reimagined' concept is a self improvement project that looked at the Android OS, and explored a
+          redesign of the interface, while conforming to Google's Material Design Guidelines. It investigates playful
+          interactions between bold images, and semi transparent shapes and colours, to create a cohesive and seamless
+          experience between applications of all types</p>
+        <button [routerLink]="['/portfolio/android-reimagined']" type="button">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- VIEW MORE WORK -->
+<div class="section-wrapper light">
+  <div [@viewportScrollAnimation]="scrollimateOptions.section5.currentState" [scrollimate]="scrollimateOptions.section5"
+       class="section-wrapper-inner-content">
+
+    <h1>Check out my work</h1>
+    <p>Like what you saw above? Take a look at my portfolio + freebies to see more of my work</p>
+
+    <button [routerLink]="['/portfolio']">View Portfolio</button>
+    <a href="http://freebies.rachellepatman.com">
+      <button>View Freebies</button>
+    </a>
+
+  </div>
+</div>
+<sd-footer></sd-footer>

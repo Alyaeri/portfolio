@@ -1,0 +1,109 @@
+<!-- PARALLAX 1 -->
+<div class="hero">
+       <span>
+        <h1>Portfolio</h1>
+         <h3>A compilation of work</h3>
+      </span>
+  <img src="../../images/portfolio/hero.png"/>
+</div>
+
+
+<!-- PORTFOLIO -->
+<div class="section-wrapper">
+  <div class="section-wrapper-inner-content">
+    <h1>Portfolio Items</h1>
+    <div class="tools-wrap margin-auto">
+      <div [class.selected]="viewAllLabel" (click)="toggleFadeInOutState(); showAll()" class="tag pointer">All</div>
+      <div [class.selected]="viewPrototypesLabel" (click)="toggleFadeInOutState();  showPrototypes()" class="tag pointer">Prototypes</div>
+      <div [class.selected]="viewWebAppsLabel" (click)="toggleFadeInOutState();  showWebApps()" class="tag pointer">Web Apps</div>
+      <div [class.selected]="viewBrandingLabel" (click)="toggleFadeInOutState();  showBranding()" class="tag pointer">Branding</div>
+    </div>
+
+    <div class="portfolio-grid {{fadeInOutState}}">
+      <a  *ngIf="viewAll || viewPrototypes" class="portfolio-item " id="android-reimagined"
+         [routerLink]="['/portfolio/android-reimagined']">
+              <span>
+                  <div>
+                    <h3>Android Reimagined</h3>
+
+                    <h4>Design + Prototyping</h4>
+                  </div>
+              </span>
+      </a>
+      <a  *ngIf="viewAll || viewBranding" class="portfolio-item " id="personal-identity"
+         [routerLink]="['/portfolio/personal-identity']">
+              <span>
+                  <div>
+                    <h3>Personal Identity</h3>
+
+                    <h4>Design + Branding + Marketing</h4>
+                  </div>
+              </span>
+      </a>
+      <a  *ngIf="viewAll || viewWebApps" class="portfolio-item " id="enquire-management-portal"
+         [routerLink]="['/portfolio/enquire-management-portal']">
+              <span>
+                  <div>
+                    <h3>Enquire Management Portal</h3>
+
+                    <h4>Software as a Service</h4>
+                  </div>
+              </span>
+      </a>
+      <a  *ngIf="viewAll || viewWebApps" class="portfolio-item " id="enquire-administration-console"
+         [routerLink]="['/portfolio/enquire-administration-console']">
+              <span>
+                  <div>
+                    <h3>Enquire Administration Console</h3>
+
+                    <h4>Software as a Service</h4>
+                  </div>
+              </span>
+      </a>
+      <a  *ngIf="viewAll || viewWebApps" class="portfolio-item " id="enquire-client-portal"
+         [routerLink]="['/portfolio/enquire-client-portal']">
+             <span>
+                <div>
+                    <h3>Enquire Client Portal</h3>
+
+                    <h4>Software as a Service</h4>
+                </div>
+             </span>
+      </a>
+      <a  *ngIf="viewAll || viewBranding" class="portfolio-item " id="enquire-branding"
+         [routerLink]="['/portfolio/enquire-branding']">
+                <span>
+                    <div>
+                      <h3>Enquire</h3>
+
+                      <h4>Branding</h4>
+                    </div>
+                </span>
+      </a>
+      <a  *ngIf="viewAll || viewPrototypes" class="portfolio-item " id="interaction-exploration"
+         [routerLink]="['/portfolio/interaction-exploration']">
+              <span>
+                  <div>
+                    <h3>Interaction Exploration</h3>
+
+                    <h4>Prototyping + Wireframes</h4>
+                  </div>
+              </span>
+      </a>
+      <a  *ngIf="viewAll || viewBranding" class="portfolio-item " id="tactiv-signage"
+         [routerLink]="['/portfolio/tactiv-signage']">
+            <span>
+                <div>
+                  <h3>Tactiv</h3>
+
+                  <h4>Signage</h4>
+                </div>
+            </span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<sd-footer></sd-footer>
+
