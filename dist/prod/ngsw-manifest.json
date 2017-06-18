@@ -1,11 +1,11 @@
 {
   "static": {
     "urls": {
-      "/index.html": "b2c84aa5d7fe0e741db6f1ca4f35d55e52f4b16f",
+      "/index.html": "2026cca87d80f21cc311c9a3fbeee8dbc166945d",
       "/worker-basic.min.js": "93904d94c0bef0479f1ec0b182788f4301d9f28e",
       "/css\\main.css": "d9bb5106b9ede403b2d39e4b0f65baea00e39176",
-      "/favicon\\android-icon-144x144.png": "0ed4feddeccbac02909c219889efc564305cd15f",
       "/favicon\\android-icon-192x192.png": "c214e4d945723b1d84b85763c555d2aee78a7bbc",
+      "/favicon\\android-icon-144x144.png": "0ed4feddeccbac02909c219889efc564305cd15f",
       "/favicon\\android-icon-36x36.png": "4b22f941bb357d6512869b850d1c58be38b84334",
       "/favicon\\android-icon-48x48.png": "96ad18f801c0b5cb730fcfd4b476ab5c24e1dfc5",
       "/favicon\\android-icon-72x72.png": "375f4a79f807ec16a28eb0469f42d67e0f514f05",
@@ -49,7 +49,7 @@
       "/images\\back-arrow-ico.svg": "9bb39af75912c0b1cb13c649853cca7f3fe80f7f",
       "/images\\logo.png": "e57f28942612387c2184fadd654d6a4394d9ba08",
       "/images\\next-arrow-ico.svg": "ef2473f46379c67535e272cfe519816a19fd1ed7",
-      "/js\\app.js": "4ee7cdc8eb607da34a1ed2861af664f77f9416d6",
+      "/js\\app.js": "02fcd5a281bca1ca609957f0bb5311217471923f",
       "/js\\shims.js": "9ae3e76160afafb39417907a7fa5ea9eb18be514",
       "/images\\about\\hero.png": "797df0de382e771157002728f158ed2c95371620",
       "/images\\contact\\marker.png": "0d95721120fd84b9a7aa4dc171c783298e17514e",
