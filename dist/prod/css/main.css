@@ -300,8 +300,18 @@ body {
   display: block;
   background-size: cover;
   text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background: #f3f3f3;
+  background: linear-gradient(135deg,#e6e3e3,#ccc);
+}
+
+.portfolio-item img {
+  height: 400px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .portfolio-item span {
@@ -436,39 +446,6 @@ body {
 
 #latest-enquire-management-portal.portfolio-item {
   background-image: url(../images/portfolio/covers/enquire-management-portal.png);
-}
-
-#android-reimagined.portfolio-item {
-  background-image: url(../images/portfolio/covers/android-reimagined.png);
-}
-
-#interaction-exploration.portfolio-item {
-  background-image: url(../images/portfolio/covers/interaction-exploration.png);
-}
-
-#enquire-management-portal.portfolio-item {
-  background-image: url(../images/portfolio/covers/enquire-management-portal.png);
-}
-
-#enquire-client-portal.portfolio-item {
-  background-image: url(../images/portfolio/covers/enquire-client-portal.png);
-}
-
-#enquire-administration-console.portfolio-item {
-  height: 400px;
-  background-image: url(../images/portfolio/covers/enquire-admin-console.png);
-}
-
-#tactiv-signage.portfolio-item {
-  background-image: url(../images/portfolio/covers/tactiv-signage.png);
-}
-
-#enquire-branding.portfolio-item {
-  background-image: url(../images/portfolio/covers/enquire-branding.png);
-}
-
-#personal-identity.portfolio-item {
-  background-image: url(../images/portfolio/covers/personal-identity.png);
 }
 
 .portfolio-hero {
@@ -862,7 +839,7 @@ gallery-main g-image {
 }
 
 gallery-main .g-image img {
-  width: 80vw;
+  max-width: 80vw;
   height: 45vw;
 }
 
@@ -899,6 +876,55 @@ gallery-main .g-bullet-curr .g-bullet-inner {
 
 #interaction-gallery gallery-main .g-bullet-inner {
   background-color: #fff!important;
+}
+
+.g-nav {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.next-arrow-ico,
+.prev-arrow-ico {
+  width: 35px!important;
+  height: 30px!important;
+}
+
+.g-nav-next,
+.g-nav-prev {
+  padding: 0!important;
+  background-color: rgba(0,0,0,.31);
+  border-radius: 50%;
+  height: 60px!important;
+  width: 60px!important;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.g-nav-prev {
+  margin-left: 20px;
+}
+
+.g-nav-prev .prev-arrow-ico {
+  margin-left: -5px;
+}
+
+.g-nav-next {
+  -webkit-flex: initial!important;
+  -ms-flex: initial!important;
+  flex: initial!important;
+  margin-right: 20px;
+  -webkit-justify-content: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+
+.g-nav-next .next-arrow-ico {
+  margin-right: -5px;
 }
 
 .dark-arrows .prev-arrow-ico {

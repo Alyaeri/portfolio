@@ -13,24 +13,19 @@ export class EnquireClientPortalComponent implements OnInit {
 
   images = [
     {
+      src: 'images/portfolio/enquire-client-portal/register.gif',
+    },
+    {
       src: 'images/portfolio/enquire-client-portal/cp-1.png',
-      text: 'Grants & Funding'
     },
     {
       src: 'images/portfolio/enquire-client-portal/cp-2.png',
-      text: 'Application Overview'
     },
     {
       src: 'images/portfolio/enquire-client-portal/cp-3.png',
-      text: 'Open Application'
     },
     {
       src: 'images/portfolio/enquire-client-portal/cp-4.png',
-      text: 'My Applications'
-    },
-    {
-      src: 'images/portfolio/enquire-client-portal/cp-5.png',
-      text: 'User Account'
     },
   ];
 

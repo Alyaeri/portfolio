@@ -15,27 +15,21 @@ export class EnquireAdministrationConsoleComponent implements OnInit {
   images = [
     {
       src: 'images/portfolio/enquire-administration-console/ac-1.png',
-      text: 'Accordion'
     },
     {
       src: 'images/portfolio/enquire-administration-console/ac-2.png',
-      text: 'Object Overview'
     },
     {
       src: 'images/portfolio/enquire-administration-console/ac-3.png',
-      text: 'Table'
     },
     {
       src: 'images/portfolio/enquire-administration-console/ac-4.png',
-      text: 'Table Row Detail'
     },
     {
       src: 'images/portfolio/enquire-administration-console/ac-5.png',
-      text: 'Editing'
     },
     {
-      src: 'images/portfolio/enquire-administration-console/ac-6.png',
-      text: 'Drag and Drop'
+      src: 'images/portfolio/enquire-administration-console/accordion.gif',
     }
   ];
 
