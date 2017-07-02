@@ -50,38 +50,43 @@ body {
   border-bottom: 1px solid #eee;
 }
 
-.nav-bar .nav-inner {
+.nav-inner {
   width: calc(100% - 30vw + 85px);
   margin: 0 auto;
 }
 
-.nav-bar .nav-inner img {
+.nav-inner img {
   margin-top: 35px;
   float: left;
   height: 70px;
   width: 70px;
+}
+
+.nav-inner img,
+.nav-links {
   z-index: 1;
   position: relative;
 }
 
-.nav-bar .nav-inner .nav-links {
+.nav-links {
   float: right;
   padding: 28px 20px;
-  z-index: 1;
-  position: relative;
 }
 
-.nav-bar .nav-inner .nav-links a {
+.nav-links a {
   color: rgba(0,0,0,.5);
   text-decoration: none;
   padding: 20px;
-  font-family: Questrial Regular,sans-serif;
   text-transform: uppercase;
 }
 
-.nav-bar .nav-inner .nav-links .is-active {
-  color: #00a696;
+.nav-links .is-active,
+.nav-links a {
   font-family: Questrial Regular,sans-serif;
+}
+
+.nav-links .is-active {
+  color: #00a696;
   font-weight: 700;
 }
 
@@ -290,6 +295,77 @@ body {
   width: 100%;
 }
 
+#menu-button {
+  visibility: hidden;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: #fff;
+  z-index: 12;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  transition: all .25s;
+  padding: 20px 0;
+}
+
+.drawer a {
+  padding: 10px 20px;
+  float: left;
+  clear: both;
+}
+
+.menu-button {
+  border-width: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 17px 20px;
+}
+
+.drawer.open {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+.obfusator {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.76);
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#nav-bar {
+  visibility: visible;
+}
+
+#drawer {
+  visibility: hidden;
+}
+
 .portfolio-item {
   width: calc(50% - 40px);
   height: 400px;
@@ -314,7 +390,7 @@ body {
 }
 
 .portfolio-item img {
-  max-height: 400px;
+  width: 80%;
 }
 
 .portfolio-item span {
@@ -1290,6 +1366,23 @@ a {
 }
 
 @media only screen and (max-width:1020px) {
+  #menu-button {
+    visibility: visible;
+  }
+
+  #nav-bar {
+    visibility: hidden;
+  }
+
+  #drawer {
+    visibility: visible;
+  }
+
+  .logo-small {
+    float: right!important;
+    margin-right: 15px!important;
+  }
+
   .section-even img,
   .section-odd img {
     max-width: 80vw;

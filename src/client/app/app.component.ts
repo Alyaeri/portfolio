@@ -9,11 +9,12 @@ import { NavigationEnd, Router } from '@angular/router';
   moduleId: module.id,
   selector: 'sd-app',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
+  styleUrls: [ 'app.component.css' ],
 })
 export class AppComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {
@@ -22,5 +23,15 @@ export class AppComponent implements OnInit {
       }
       window.scrollTo(0, 0)
     });
+  }
+
+  openNav() {
+    document.getElementById('drawer').classList.add('open');
+    document.getElementById('obfusator').classList.add('visible');
+  }
+
+  closeNav() {
+    document.getElementById('drawer').classList.remove('open');
+    document.getElementById('obfusator').classList.remove('visible');
   }
 }

@@ -3,6 +3,23 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 1020px) {
 
+  #menu-button {
+    visibility: visible;
+  }
+
+  #nav-bar {
+    visibility: hidden;
+  }
+
+  #drawer {
+    visibility: visible;
+  }
+
+  .logo-small {
+    float: right!important;
+    margin-right: 15px!important;
+  }
+
   .section-odd, .section-even {
 
     img {

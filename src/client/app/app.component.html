@@ -2,8 +2,10 @@
   <div class="nav-inner">
     <img class="logo-small" src="../images/logo.png"/>
 
-    <div class="nav-links">
-
+    <button class="menu-button" id="menu-button" (click)="openNav()">
+      <i class="material-icons">menu</i>
+    </button>
+    <div id="nav-bar" class="nav-links">
       <a [routerLinkActive]="['is-active']" [routerLink]="['']" [routerLinkActiveOptions]="{exact:true}">Home</a>
       <a [routerLinkActive]="['is-active']" [routerLink]="['/about']" [routerLinkActiveOptions]="{exact:true}">About</a>
       <a [routerLinkActive]="['is-active']" [routerLink]="['/portfolio']">Portfolio</a>
@@ -12,5 +14,16 @@
     </div>
   </div>
 </div>
+
+
+<div id="drawer" class="drawer nav-links">
+  <a [routerLinkActive]="['is-active']" [routerLink]="['']" [routerLinkActiveOptions]="{exact:true}">Home</a>
+  <a [routerLinkActive]="['is-active']" [routerLink]="['/about']" [routerLinkActiveOptions]="{exact:true}">About</a>
+  <a [routerLinkActive]="['is-active']" [routerLink]="['/portfolio']">Portfolio</a>
+  <a href="http://freebies.rachellepatman.com" target="_blank">Freebies</a>
+  <!--<a [routerLinkActive]="['is-active']" [routerLink]="['/contact']" [routerLinkActiveOptions]="{exact:true}">Contact</a>-->
+</div>
+
+<div (click)="closeNav()" id="obfusator" class="obfusator"></div>
 
 <router-outlet></router-outlet>
